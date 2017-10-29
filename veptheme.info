@@ -1,0 +1,15 @@
+name = VEP Theme
+description = Drupal theme for Veterans' Employment Program
+core = 7.x
+engine = phptemplate
+
+regions[header] = Header
+regions[sidebar_first] = Right sidebar
+regions[content] = Content
+regions[footer] = Footer
+
+stylesheets[all][] = css/styles.css
+stylesheets[print][] = css/print.css
+
+features[] = name
+features[] = main_menu

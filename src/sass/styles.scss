@@ -1,0 +1,10 @@
+/*@import "~bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss";*/
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss";
+@import "customVariables.scss";
+/*$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";*/
+$icon-font-path: "fonts/";
+/*@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";*/
+@import "bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+@import "custom.scss";
+@import "print.scss";

@@ -1,0 +1,19 @@
+{
+  "name": "vep-theme",
+  "version": "1.0.0",
+  "description": "Drupal Theme for Veterans' Employment Program",
+  "scripts": {
+    "compile": "gulp sass",
+    "watch": "gulp sass:watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

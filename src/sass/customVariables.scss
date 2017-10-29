@@ -1,0 +1,31 @@
+// VEP Colour Scheme
+$text-highlight:         rgba(250,194,102,0.5);
+$card-border:            #2A9ED1;
+$white:                  #fff;
+$light-blue:             #1658A5;
+$link-hover:             #5bcbe3;
+$shadow:                 rgba(49,49,49,0.7);
+$card-focus:             #F0F3F5;
+
+// Bootstrap overrides
+$brand-primary:         darken(#313131, 6.5%);
+
+$link-hover-color:      $brand-primary;
+$link-hover-decoration: none;
+
+$font-family-uikit:       -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen",
+                          "Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+
+$p-font-size:             1.6rem;
+$font-size-h2:            2.3rem;
+$font-size-h3:            ceil(($font-size-base * 1.4));
+$font-size-h4:            ceil(($font-size-base * 1.28));
+
+$jumbotron-padding:              25px;
+$jumbotron-color:                black;
+$jumbotron-font-size:            1.88rem;
+
+$panel-heading-padding:       1.6em;
+$panel-footer-border-color:   6px solid #555;
+
+$grid-float-breakpoint: 992px;

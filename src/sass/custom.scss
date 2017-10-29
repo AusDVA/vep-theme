@@ -1,0 +1,379 @@
+// navbar
+
+.beta {
+  border-radius: 8px;
+  font-size: 1.2rem;
+  padding: 5px 8px;
+  margin-left: 3px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: #1057a7;
+  color: #fff;
+}
+
+p.mobile-menu.text-center {
+  font-size: $font-size-h3;
+  font-weight: 600;
+}
+
+.mobile-menu {
+  padding: 0.6em;
+  margin:0;
+}
+
+.mobile-menu:hover,
+.mobile-menu:focus {
+  background-color: #bbbbbb;
+}
+
+.navbar-nav > li > a {
+  margin: .4em 1em .8em .4em;
+  color: $light-blue;
+  font-weight: bold;
+  font-size: $p-font-size;
+}
+
+span.glyphicon.glyphicon-chevron-down {
+  margin-left: 3em;
+}
+
+
+@media (min-width: 992px) {
+  .nav > li > a {
+      padding: 0;
+      margin-right: 1.5em;
+  }
+  .mobile-nav {
+    display: none;
+  }
+}
+
+.rotate-down
+ {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transition-duration: 0.5s;
+}
+
+.rotate
+ {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+
+.logo img {
+    max-width: 300px;
+    max-height: 72px;
+    margin: 1em 0 1.5em 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+.active {
+  color: $brand-primary!important;
+  background-color: $white!important;
+  outline: none!important;
+  border-bottom: transparent;
+}
+
+.navbar-collapse {
+  padding-right: 0;
+}
+
+@media (max-width: 991.99px) {
+
+   .nav > li > a {
+    border-top: 2px solid #bbbbbb;
+    border-bottom: transparent;
+    padding: 1.5em 0 1.5em 0;
+    margin: 0;
+  }
+
+  .navbar-nav > li > a:hover,
+  .navbar-nav > li > a:focus {
+   background-color: #def4f9;
+  }
+
+  .navbar-collapse {
+    padding-right: 15px;
+  }
+}
+
+
+
+// header
+
+.vep-branding {
+  margin-top: 1.3em;
+  width: 100%;
+  background: linear-gradient(135deg, #263873 0%,#3eaab7 100%);
+  max-height: 19vh;
+}
+
+.vep-branding img {
+  max-width: 100%;
+  max-height: 19vh;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+
+// fonts and tag styles.
+
+body {
+  font-family: $font-family-uikit;
+}
+
+.row {
+  padding-bottom: 1em;
+}
+
+.body-content ul > li, .body-content ol > li {
+  margin-bottom: .4em;
+  font-size: $p-font-size;
+}
+
+.body-content {
+  min-height: 605px;
+}
+
+@media only screen and (max-width: 768px) {
+   h1 {
+     font-size: $font-size-h3;
+   }
+}
+
+ a {
+  border-bottom: solid 1px $light-blue;
+  color: $link-color;
+}
+
+ a:hover {
+  background-color: $link-hover;
+  border-color: transparent;
+}
+
+ a:focus,
+ a:active
+ {
+  background-color: $link-hover;
+  border-bottom: transparent;
+  outline: 1px solid #313131;
+  outline-offset: 1px;
+}
+
+p {
+  font-size: $p-font-size;
+}
+
+h1 {
+  font-weight: bold;
+  margin-bottom: 1.4em;
+}
+
+h2  {
+  line-height: 1.4;
+}
+
+h2, h3 {
+  font-weight: 600;
+}
+
+
+h4, h5 {
+  font-weight: 700;
+}
+
+h5 {
+  line-height: 0.9;
+}
+
+::-moz-selection {
+  background: $text-highlight
+}
+
+::selection {
+  background: $text-highlight
+}
+
+.hidden-print{
+  margin-top: 1em;
+}
+
+// blurb
+
+.jumbotron.jumbotron-fluid p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+// news items
+
+.news section {
+
+  line-height: 1.6;
+  font-family: $font-family-uikit;
+}
+
+.news img {
+  width: 375px;
+  height: 214px;
+  border-top: 5px solid $card-border;
+}
+
+.news {
+  margin: 0 0 10vh -2vh;
+}
+
+.news h2 {
+  margin-bottom: 0.8em;
+}
+
+.news-headline {
+  line-height: 1.5em;
+}
+
+// table of contents.
+
+.list-contents-wrapper {
+   border-left: .4em solid #888;
+}
+.list-contents{
+  padding-left: 2em;
+  margin-bottom: 2.5em;
+  font-weight: bold;
+  list-style: none;
+}
+
+.list-contents-header{
+  color: #6f6f6f;
+  font-size:20px !important;
+  font-weight: normal;
+  padding-left: 1.4em;
+}
+
+// contact form styles
+
+.form-group.required .control-label:after {
+  content:" *";
+  color:red;
+}
+
+.contact-subheader {
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+// biographies
+
+.bio-section {
+  margin-top: 3em;
+  border-top: 4px solid #555;
+}
+
+.bio-section .row {
+  margin-top: 1.5em;
+}
+
+.bio-title {
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+
+.bio-description,
+.bio-education {
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+
+.bio-education {
+  font-size: 14px;
+  line-height: 0.9;
+}
+
+.bio-position {
+  margin-bottom: 1em
+}
+
+
+
+// footer
+
+.panel-footer {
+  border-top: $panel-footer-border-color;
+  margin-top: 1.4em;
+  padding: 10px 0 0 0;
+}
+
+.panel-footer small {
+  vertical-align: middle;
+  line-height: 4;
+
+}
+
+.panel-footer .list-inline a {
+  font-size: 85%;
+}
+
+.list-inline li a {
+   margin: .4em 1em .8em .4em;
+   color: $light-blue;
+   font-weight: bold;
+   font-size: $p-font-size;
+ }
+
+ .list-inline li a:focus {
+   background-color: $link-hover;
+   border-bottom: transparent;
+   outline: 1px solid #313131;
+   outline-offset: 1px;
+ }
+
+// misc
+
+.print-only {
+  display: none;
+}
+
+.breadcrumb {
+  background-color: $white;
+}
+
+@media (max-width: 415px) {
+  .col-xs-6 {
+    width: 100% !important;
+  }
+  .news img {
+    width: 100%;
+  }
+}
+
+.break {
+  margin-top: 2em;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.page-title {
+  position: absolute;
+  left: -11111px;
+  top: auto;
+}
+
+.no-border:focus {
+  outline: 0;
+}
+
+.copyright {
+ margin-bottom: 0.1em; 
+}
+

@@ -1,0 +1,60 @@
+// custom print styles"style",
+
+@media print {
+
+  .no-float-print div,
+  .bio-section section {
+   float: none !important;
+  }
+
+   img {
+     page-break-before: auto;
+     page-break-after: auto;
+     page-break-inside: avoid;
+     float: none !important;
+
+    }
+
+  .bio-section,
+  .section-nobreak
+  {
+    page-break-before: auto;
+    page-break-after: auto;
+    page-break-inside: avoid;
+    float: none !important;
+
+
+    }
+
+  .logo img {
+    margin: 1em, 0, 1em, 0 ;
+  }
+
+  .thumbnail {
+    width: 155px;
+  }
+
+  a:link:after, a:visited:after {
+     content: "";
+    }
+
+  .print-only {
+    display: block;
+  }
+
+  .news img {
+    width: auto;
+    width: initial;
+    height: auto;
+    height: initial;
+  }
+
+  .bio-img {
+    height: 900px;
+  }
+
+  .show-print {
+    display:block!important
+  }
+
+}
