@@ -8,6 +8,7 @@ Drupal Theme for Veterans' Employment Program
 
 - Drupal 7.56
 - Yarn
+- At minimum jquery 1.9.1 installed on the Drupal host
 
 ### Installing
 
