@@ -5,23 +5,25 @@
             <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
         </nav>
         <div class="row">
+			<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"">
             <div class="logo col-md-6 col-sm-6 col-xs-6"><img alt="Australian Coat of Arms" src="<?php print $directory; ?>/images/logo-gov.svg" />
-            </div>
-            <div class="col-md-2 col-xs-6 col-md-offset-2"><span class="beta">Beta Version</span></div>
+            </div></a>
+            <div class="col-md-2 col-xs-6 col-md-offset-2"><span class="beta">BETA</span></div>
 
             <div class="navbar-header col-md-1 col-xs-12 text-center">
-                <button onclick="{this.handleClick}" type="button" class="navbar-toggle collapsed"
+                <button id="mobile-button" type="button" class="navbar-toggle collapsed"
                         data-toggle="collapse"
                         data-target="#mobile-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <a href="#"><p class="mobile-menu text-center">Menu
                             <span
-                                    class={this.state.isToggleOn ? "glyphicon glyphicon-chevron-down rotate-down" : "glyphicon glyphicon-chevron-down rotate"}
+                                    id="glyphicon" class="glyphicon glyphicon-chevron-down rotate-down"
                             aria-hidden="true"></span></p></a>
                 </button>
             </div>
         </div>
 
         <?php echo theme('links__system_main_menu', array('links' => $main_menu)); ?>
+		 <?php echo theme('links__system_mobile_menu', array('links' => $main_menu)); ?>
     </div>
 
     <header class="print-only" aria-hidden="true">

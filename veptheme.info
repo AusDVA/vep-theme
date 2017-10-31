@@ -11,5 +11,10 @@ regions[footer] = Footer
 stylesheets[all][] = css/styles.css
 stylesheets[print][] = css/print.css
 
+
+scripts[] = js/bootstrap.min.js
+scripts[] = js/global.js
 features[] = name
 features[] = main_menu
+features[] = mobile_menu
+
