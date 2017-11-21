@@ -3,6 +3,7 @@ description = Drupal theme for Veterans' Employment Program
 core = 7.x
 engine = phptemplate
 
+regions[banner] = Banner
 regions[header] = Header
 regions[sidebar_first] = Right sidebar
 regions[content] = Content
@@ -17,4 +18,5 @@ scripts[] = js/global.js
 features[] = name
 features[] = main_menu
 features[] = mobile_menu
+features[] = favicon
 

@@ -1,14 +1,59 @@
 // navbar
 // Beta version banner
-.beta {
+.beta,
+.subcribe,
+.subcribe-mobile {
   border-radius: 8px;
   font-size: 1.2rem;
   padding: 0.4em 1em 0.4em 1em;
-  margin-left: 3px;
+  margin-left: 1.5em;
   font-weight: 700;
   letter-spacing: 1px;
   background: #1057a7;
   color: #fff;
+  line-height: 2.5;
+}
+
+#latest-news-subscribe {
+  margin-bottom : -1.3em ;
+  padding-bottom : 15px;
+}
+
+#subcribe > a {
+  text-decoration: none;
+  border-bottom: transparent !important;
+  margin-top: 0.2em;
+}
+
+.subcribe-news {
+  padding: 0.7em 1.4em 0.7em 1.4em;
+  font-size: 1.6rem;
+}
+
+#subcribe-mobile > a {
+  text-decoration: none;
+  border-bottom: transparent !important;
+}
+
+.news-wrapper {
+  margin-top : 4em;
+}
+
+#subcribe > a:hover,
+#subcribe > a:focus,
+#subcribe-mobile > a:hover,
+#subcribe-mobile > a:focus {
+  background : #fff;
+}
+
+.subcribe {
+  background : #b3146f;
+  margin-left : auto;
+  text-decoration: none;
+}
+
+.subcribe-mobile {
+  background : #b3146f;
 }
 
 .header-message {
@@ -51,19 +96,24 @@ p.mobile-menu.text-center {
   color: $light-blue;
   font-weight: bold;
   font-size: $p-font-size;
+
 }
 
 span.glyphicon.glyphicon-chevron-down {
-  margin-left: 3em;
+  margin-left: 2em;
 }
 
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .nav > li > a {
       padding: 0;
       margin-right: 1.5em;
   }
   .mobile-nav {
+    display: none;
+  }
+
+  #subcribe-mobile {
     display: none;
   }
 }
@@ -110,7 +160,7 @@ span.glyphicon.glyphicon-chevron-down {
   padding-right: 0;
 }
 
-@media (max-width: 991.99px) {
+@media (max-width: 1199.99px) {
 
    .nav > li > a {
     border-top: 2px solid #bbbbbb;
@@ -144,6 +194,11 @@ span.glyphicon.glyphicon-chevron-down {
   height: auto;
   -ms-interpolation-mode: bicubic;
 }
+// overide row class for beta header message.
+#top > div > div {
+  padding-bottom: 0!important;
+}
+
 
 // fonts and tag styles.
 
@@ -167,6 +222,9 @@ body {
 @media only screen and (max-width: 768px) {
    h1 {
      font-size: $font-size-h3;
+   }
+   iframe {
+     height : 300px;
    }
 }
 
@@ -325,12 +383,25 @@ h5 {
 }
 
 .bio-position {
-  margin-bottom: 1em
+  margin-bottom: 2em
 }
 
 
 
 // footer
+
+@media (min-width: 992px ) {
+
+  #subscribe-footer > a {
+    margin-left: -1em;
+  }
+
+  #accessibility-footer > a {
+    margin-left: -0.7em;
+  }
+}
+
+
 
 .panel-footer {
   border-top: $panel-footer-border-color;
@@ -341,7 +412,6 @@ h5 {
 .panel-footer small {
   vertical-align: middle;
   line-height: 4;
-
 }
 
 .panel-footer .list-inline a {
@@ -350,9 +420,11 @@ h5 {
 
 .list-inline li a {
    margin: .4em 1em .8em .4em;
+   border-bottom: solid 1px #1B7991;
    color: $light-blue;
    font-weight: bold;
    font-size: $p-font-size;
+   line-height: 1.6
  }
 
  .list-inline li a:focus {
@@ -360,6 +432,37 @@ h5 {
    border-bottom: transparent;
    outline: 1px solid #313131;
    outline-offset: 1px;
+ }
+
+ @media (max-width: 767.99px ) {
+   .desktop-footer {
+     display : none;
+   }
+   .list-inline li a {
+
+    }
+    #mobile-footer > div.col-sm-6.col-xs-12.col-md-10 > ul {
+      margin-top : -1.25em;
+    }
+
+    .panel-footer small {
+      font-size: 1.6rem;
+    }
+
+   .panel-footer .list-inline a {
+     font-size: 125%;
+   }
+
+
+ }
+
+ @media (min-width: 768px ) {
+   #mobile-footer {
+     display : none;
+   }
+
+
+
  }
 
 // misc
@@ -379,6 +482,11 @@ h5 {
   .news img {
     width: 100%;
   }
+
+  iframe {
+    height : 200px;
+  }
+
 }
 
 .break {
@@ -409,4 +517,18 @@ h5 {
 
 h1.heading {
   width : 90%;
+}
+
+#latest-news-h3 {
+  margin-bottom : 1.5em;
+  margin-top : 0.5em;
+}
+
+
+hidden {
+  display : none;
+}
+
+.messages {
+  margin-top: 0em!important;
 }
