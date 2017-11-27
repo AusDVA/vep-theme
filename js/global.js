@@ -5,32 +5,26 @@ jQuery(document).ready(function($){
 		$("#glyphicon").toggleClass( "rotate rotate-down" );
 	});
  
-	// Read more / less homepage
-	$("#readMore").on("click", function () {
-        var txt = $(".about").is(':visible') ? 'Read More' : 'Read Less';
-        $("#readMore").text(txt);
-		$(".about").toggleClass( "hidden" );		
-    });
-	
-	 // Read more / less first news article
-	$("#readMoreNews").on("click", function () {
-        var txt = $(".news1").is(':visible') ? 'Read More' : 'Read Less';
-        $("#readMoreNews").text(txt);
-		$(".news1").toggleClass( "hidden" );		
-    });
-	
-	// Read more / less second news article
-	$("#readMoreNews2").on("click", function () {
-        var txt = $(".news2").is(':visible') ? 'Read More' : 'Read Less';
-        $("#readMoreNews2").text(txt);
-		$(".news2").toggleClass( "hidden" );		
-    });
-	
-	// Focus main content after selecting skip link
-	$("#skip").on("click", function () {
-		$( "#content" ).focus();
-	});
+	// focus main content
+	 $("#skip").click(function(event){
+    
+            // strip the leading hash and declare
+            // the content we're skipping to
+            var skipTo="#"+this.href.split('#')[1];
+    
+            // Setting 'tabindex' to -1 takes an element out of normal 
+            // tab flow but allows it to be focused via javascript
+            $(skipTo).attr('tabindex', -1).on('blur focusout', function () {
+    
+                // when focus leaves this element, 
+                // remove the tabindex attribute
+                $(this).removeAttr('tabindex');
+    
+            }).focus(); // focus on the content container
+        });
+
 	
 });
+
 
 

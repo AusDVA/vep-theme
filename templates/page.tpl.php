@@ -8,7 +8,7 @@
 
     <div class="container hidden-print">
 	
-        <nav class="no-border" tabindex="-1" autofocus>
+        <nav class="no-border" tabindex="-1">
             <a id="skip" href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
         </nav>
         <div class="row">
