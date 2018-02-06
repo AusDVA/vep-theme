@@ -13,7 +13,8 @@
         </nav>
         <div class="row">
 			<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-            <div class="logo col-md-6 col-sm-6 col-xs-6"><img alt="Australian Coat of Arms" src="<?php print $directory; ?>/images/logo-gov.svg" />
+            <div class="logo col-md-6 col-sm-6 col-xs-6">
+			<?php print '<img src="'. $base_path . path_to_theme() . '/images/logo-gov.svg' .'" alt="Australian Coat of Arms" />'?>
             </div></a>
             
 
@@ -42,20 +43,20 @@
 
     <header class="print-only" aria-hidden="true">
         <div class="row">
-            <div class="col-md-12">
-                <img src="<?php print $directory; ?>/images/vepbanner.png" alt="Header image for printing purposes"/>
+            <div class="col-md-12">      
+				<?php print '<img src="'. $base_path . path_to_theme() . '/images/vepbanner.png' .'" alt="Header image for printing purposes" />'?>
             </div>
         </div>
     </header>
     <div class="hidden-print" id="header">
         <header class="vep-branding">
             <div class="container">
-                <img src="<?php print $directory; ?>/images/banner4.png" alt="Prime Minister's Veterans' Employment Program"/>
+				<?php print '<img src="'. $base_path . path_to_theme() . '/images/banner4.png' .'" alt="Prime Minister’s Veterans’ Employment Program" />'?>               
             </div>
         </header>
     </div>
 
-    <div id="content">
+    <div>
         <?php print render($messages); ?>
         <?php if ($tabs): ?>
             <div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>

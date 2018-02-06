@@ -39,8 +39,8 @@
   margin-top : 4em;
 }
 
-#subcribe > a:hover,
-#subcribe > a:focus,
+.subcribe > a:hover,
+.subcribe > a:focus,
 #subcribe-mobile > a:hover,
 #subcribe-mobile > a:focus {
   background : #fff;
@@ -369,7 +369,8 @@ h5 {
 }
 
 .bio-description,
-.bio-education {
+.bio-education,
+.awards-heading {
   font-weight: 700;
   font-size: 18px;
   margin-top: 10px;
@@ -377,7 +378,8 @@ h5 {
   line-height: 1.1;
 }
 
-.bio-education {
+.bio-education,
+.awards-heading {
   font-size: 14px;
   line-height: 0.9;
 }
@@ -532,3 +534,109 @@ hidden {
 .messages {
   margin-top: 0em!important;
 }
+
+// Awards Winners page.
+
+blockquote {
+	border:0;
+    font-family: Georgia, serif;
+    position: relative;
+    //margin: 0.5em;
+    //padding: 0.5em 2em 0.5em 3em;
+}
+
+blockquote:before {
+    font-family: Georgia, serif;
+	margin-left: -0.1em;
+    position: absolute;
+    font-size: 3em;
+    line-height: 1;
+    top: 0;
+    left: 0;
+    content: "\201C";
+}
+blockquote:after {
+    font-family: Georgia, serif;
+    position: absolute;
+    //float:right;
+    font-size:3em;
+    line-height: 1;
+    right:0;
+    bottom:-0.5em;
+    content: "\201D";
+}
+blockquote footer {
+    padding: 0 2em 0 0;
+    text-align:right;
+}
+blockquote cite:before {
+    content: "\2013";
+}
+
+// overide link border in dropdown menu
+.dropdown-menu > li > a {
+	border: 0;
+}
+
+
+// slick carousel
+
+.slick-prev:before, 
+.slick-next:before{
+    color: black;
+}
+
+// add padding to cards in carousel
+.card-padded {
+	padding-left: 25px;
+	padding-right: 10px;
+}
+
+@media (max-width: 991px) {
+	.card-padded {
+		padding-left: 50px;
+		padding-right: 20px;
+	}
+}
+
+@media (min-width: 767px) {
+	.card-border {
+		min-height: 650px;
+	}
+}
+
+@media (min-width: 1199px) {
+	.card-border {
+		min-height: 500px;
+	}
+}
+
+
+
+.card-border {
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+	border-color: #343a40!important;
+}
+
+.card-header {
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+	font-weight: 600;
+	padding: 15px;
+}
+
+.card-title, .card-text {
+    padding: 0px 15px 0px 15px;
+}
+
+//remove outline when going through slides
+.slick-current:focus,
+.slick-slide:focus {
+	outline: 0;
+}
+
+
+
+

@@ -48,6 +48,7 @@
 <head profile="<?php print $grddl_profile; ?>">
   <?php print $head; ?>
   <title>Prime Minister's Veterans' Employment Program</title>
+
   <?php print $styles; ?>
   <?php print $scripts; ?>
   
@@ -55,7 +56,6 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <meta name="identifier-URL" content="http://www.veteransemployment.gov.au" />
-      <link rel="icon" href="favicon.ico" type="image/x-icon" />
       <meta name="description"
             content="The Prime Minister launched the Veterans' Employment Program on 17 November 2016 to raise
                      awareness of the unique skills and experience that veterans can bring to the civilian workplace and

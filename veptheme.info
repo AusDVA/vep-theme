@@ -9,10 +9,10 @@ regions[sidebar_first] = Right sidebar
 regions[content] = Content
 regions[footer] = Footer
 
-stylesheets[all][] = css/styles.css
+stylesheets[all][] = css/styles.css     
 stylesheets[print][] = css/print.css
 
-
+scripts[] = js/jquery-3.2.1.min.js
 scripts[] = js/bootstrap.min.js
 scripts[] = js/global.js
 features[] = name

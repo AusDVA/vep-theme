@@ -1,0 +1,106 @@
+.form-type-select {
+    position: relative;
+    margin-bottom: 20px
+}
+
+
+
+.form-type-select select
+ {
+    display: block;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    border-radius: 0;
+    font-size: 16px;
+    line-height: 24px;
+    word-spacing: 1px;
+    font-family: Akkurat, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.form-type-select label {
+    position: absolute;
+    top: 19px;
+    color: #666;
+    pointer-events: none;
+    transition: all .2s ease
+}
+
+
+.form-type-select select {
+    width: 100%;
+    color: #414141;
+    position: relative;
+    height: 48px;
+    min-height: 48px;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    padding-top: 18px;
+    padding-bottom: 4px;
+    font-weight: 400;
+    transition: border-bottom-color .2s ease;
+}
+
+
+.form-type-select select:focus {
+    border-bottom-color: transparent
+}
+
+
+.form-type-select select:focus~.form-select
+ {
+    width: 100%;
+    opacity: 1
+}
+
+
+
+.input-box textarea {
+    overflow-y: hidden;
+    resize: none
+}
+
+.form-type-select select {
+    padding-right: 12px;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIiB3aWR0aD0iMzIiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAzMiAyNCI+PHBvbHlnb24gcG9pbnRzPSIwLDAgMzIsMCAxNiwyNCIgZmlsbD0iI2JiYmJiYiI+PC9wb2x5Z29uPjwvc3ZnPg==");
+    background-origin: content-box;
+    background-position: right -12px center;
+	width: 200px;
+	margin-left: 15px;
+}
+
+
+
+
+
+.form-type-select select::-ms-expand {
+    display: none
+}
+
+.form-type-select form-select {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 2px;
+    width: 0;
+    opacity: 0;
+    background: #49b2ec;
+    transition: opacity .2s ease, width .25s ease
+}
+
+
+
+@media (min-width:640px) {
+    .form-type-select {
+        margin-bottom: 30px
+    }  
+}
